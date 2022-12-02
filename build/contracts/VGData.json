@@ -1,0 +1,2043 @@
+{
+  "contractName": "VGData",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "datablocks",
+      "outputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "name": "email",
+          "type": "string"
+        },
+        {
+          "name": "gameid",
+          "type": "string"
+        },
+        {
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "name": "transferable",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x4fabaa2e"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "dataCount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0x5da40c47"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor",
+      "signature": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "email",
+          "type": "string"
+        },
+        {
+          "name": "gameid",
+          "type": "string"
+        },
+        {
+          "name": "key",
+          "type": "string"
+        },
+        {
+          "name": "transferable",
+          "type": "bool"
+        }
+      ],
+      "name": "createLicence",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0xcdcb623f"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "name": "newemail",
+          "type": "string"
+        }
+      ],
+      "name": "transferlicence",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0x5cd87f45"
+    }
+  ],
+  "bytecode": "0x60806040526000805534801561001457600080fd5b506100d06040805190810160405280600981526020017f61406162632e636f6d00000000000000000000000000000000000000000000008152506040805190810160405280600381526020017f47473100000000000000000000000000000000000000000000000000000000008152506040805190810160405280600b81526020017f6173646a646f616a64686900000000000000000000000000000000000000000081525060006100d5640100000000026401000000009004565b610226565b6000805460019081018083556040805160a08101825282815260208082018a81528284018a905260608301899052871515608084015293865284815291909420845181559151805192936101319390850192919091019061018b565b506040820151805161014d91600284019160209091019061018b565b506060820151805161016991600384019160209091019061018b565b50608091909101516004909101805460ff191691151591909117905550505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106101cc57805160ff19168380011785556101f9565b828001600101855582156101f9579182015b828111156101f95782518255916020019190600101906101de565b50610205929150610209565b5090565b61022391905b80821115610205576000815560010161020f565b90565b61080a806102356000396000f3fe6080604052600436106100615763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416634fabaa2e81146100665780635cd87f45146101e65780635da40c47146102a2578063cdcb623f146102c9575b600080fd5b34801561007257600080fd5b506100906004803603602081101561008957600080fd5b503561048c565b6040518086815260200180602001806020018060200185151515158152602001848103845288818151815260200191508051906020019080838360005b838110156100e55781810151838201526020016100cd565b50505050905090810190601f1680156101125780820380516001836020036101000a031916815260200191505b50848103835287518152875160209182019189019080838360005b8381101561014557818101518382015260200161012d565b50505050905090810190601f1680156101725780820380516001836020036101000a031916815260200191505b50848103825286518152865160209182019188019080838360005b838110156101a557818101518382015260200161018d565b50505050905090810190601f1680156101d25780820380516001836020036101000a031916815260200191505b509850505050505050505060405180910390f35b3480156101f257600080fd5b506102a06004803603604081101561020957600080fd5b8135919081019060408101602082013564010000000081111561022b57600080fd5b82018360208201111561023d57600080fd5b8035906020019184600183028401116401000000008311171561025f57600080fd5b91908080601f01602080910402602001604051908101604052809392919081815260200183838082843760009201919091525092955061065d945050505050565b005b3480156102ae57600080fd5b506102b7610687565b60408051918252519081900360200190f35b3480156102d557600080fd5b506102a0600480360360808110156102ec57600080fd5b81019060208101813564010000000081111561030757600080fd5b82018360208201111561031957600080fd5b8035906020019184600183028401116401000000008311171561033b57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600092019190915250929594936020810193503591505064010000000081111561038e57600080fd5b8201836020820111156103a057600080fd5b803590602001918460018302840111640100000000831117156103c257600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600092019190915250929594936020810193503591505064010000000081111561041557600080fd5b82018360208201111561042757600080fd5b8035906020019184600183028401116401000000008311171561044957600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600092019190915250929550505050351515905061068d565b600160208181526000928352604092839020805481840180548651600296821615610100026000190190911695909504601f810185900485028601850190965285855290949193929091908301828280156105285780601f106104fd57610100808354040283529160200191610528565b820191906000526020600020905b81548152906001019060200180831161050b57829003601f168201915b50505060028085018054604080516020601f60001961010060018716150201909416959095049283018590048502810185019091528181529596959450909250908301828280156105ba5780601f1061058f576101008083540402835291602001916105ba565b820191906000526020600020905b81548152906001019060200180831161059d57829003601f168201915b5050505060038301805460408051602060026001851615610100026000190190941693909304601f810184900484028201840190925281815294959493509083018282801561064a5780601f1061061f5761010080835404028352916020019161064a565b820191906000526020600020905b81548152906001019060200180831161062d57829003601f168201915b5050506004909301549192505060ff1685565b6000828152600160208181526040909220835161068293919092019190840190610743565b505050565b60005481565b6000805460019081018083556040805160a08101825282815260208082018a81528284018a905260608301899052871515608084015293865284815291909420845181559151805192936106e993908501929190910190610743565b5060408201518051610705916002840191602090910190610743565b5060608201518051610721916003840191602090910190610743565b50608091909101516004909101805460ff191691151591909117905550505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061078457805160ff19168380011785556107b1565b828001600101855582156107b1579182015b828111156107b1578251825591602001919060010190610796565b506107bd9291506107c1565b5090565b6107db91905b808211156107bd57600081556001016107c7565b9056fea165627a7a7230582045679eb43a84c7494f417db4e9c67b29aeee531b65620d675d40370b005f56d90029",
+  "deployedBytecode": "0x6080604052600436106100615763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416634fabaa2e81146100665780635cd87f45146101e65780635da40c47146102a2578063cdcb623f146102c9575b600080fd5b34801561007257600080fd5b506100906004803603602081101561008957600080fd5b503561048c565b6040518086815260200180602001806020018060200185151515158152602001848103845288818151815260200191508051906020019080838360005b838110156100e55781810151838201526020016100cd565b50505050905090810190601f1680156101125780820380516001836020036101000a031916815260200191505b50848103835287518152875160209182019189019080838360005b8381101561014557818101518382015260200161012d565b50505050905090810190601f1680156101725780820380516001836020036101000a031916815260200191505b50848103825286518152865160209182019188019080838360005b838110156101a557818101518382015260200161018d565b50505050905090810190601f1680156101d25780820380516001836020036101000a031916815260200191505b509850505050505050505060405180910390f35b3480156101f257600080fd5b506102a06004803603604081101561020957600080fd5b8135919081019060408101602082013564010000000081111561022b57600080fd5b82018360208201111561023d57600080fd5b8035906020019184600183028401116401000000008311171561025f57600080fd5b91908080601f01602080910402602001604051908101604052809392919081815260200183838082843760009201919091525092955061065d945050505050565b005b3480156102ae57600080fd5b506102b7610687565b60408051918252519081900360200190f35b3480156102d557600080fd5b506102a0600480360360808110156102ec57600080fd5b81019060208101813564010000000081111561030757600080fd5b82018360208201111561031957600080fd5b8035906020019184600183028401116401000000008311171561033b57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600092019190915250929594936020810193503591505064010000000081111561038e57600080fd5b8201836020820111156103a057600080fd5b803590602001918460018302840111640100000000831117156103c257600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600092019190915250929594936020810193503591505064010000000081111561041557600080fd5b82018360208201111561042757600080fd5b8035906020019184600183028401116401000000008311171561044957600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600092019190915250929550505050351515905061068d565b600160208181526000928352604092839020805481840180548651600296821615610100026000190190911695909504601f810185900485028601850190965285855290949193929091908301828280156105285780601f106104fd57610100808354040283529160200191610528565b820191906000526020600020905b81548152906001019060200180831161050b57829003601f168201915b50505060028085018054604080516020601f60001961010060018716150201909416959095049283018590048502810185019091528181529596959450909250908301828280156105ba5780601f1061058f576101008083540402835291602001916105ba565b820191906000526020600020905b81548152906001019060200180831161059d57829003601f168201915b5050505060038301805460408051602060026001851615610100026000190190941693909304601f810184900484028201840190925281815294959493509083018282801561064a5780601f1061061f5761010080835404028352916020019161064a565b820191906000526020600020905b81548152906001019060200180831161062d57829003601f168201915b5050506004909301549192505060ff1685565b6000828152600160208181526040909220835161068293919092019190840190610743565b505050565b60005481565b6000805460019081018083556040805160a08101825282815260208082018a81528284018a905260608301899052871515608084015293865284815291909420845181559151805192936106e993908501929190910190610743565b5060408201518051610705916002840191602090910190610743565b5060608201518051610721916003840191602090910190610743565b50608091909101516004909101805460ff191691151591909117905550505050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061078457805160ff19168380011785556107b1565b828001600101855582156107b1579182015b828111156107b1578251825591602001919060010190610796565b506107bd9291506107c1565b5090565b6107db91905b808211156107bd57600081556001016107c7565b9056fea165627a7a7230582045679eb43a84c7494f417db4e9c67b29aeee531b65620d675d40370b005f56d90029",
+  "sourceMap": "27:668:2:-;;;69:1;47:23;;246:114;8:9:-1;5:2;;;30:1;27;20:12;5:2;246:114:2;302:52;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;348:5;302:13;;;:52;;;:::i;:::-;27:668;;366:210;480:9;:11;;;;;;;;;520:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;498:21;;;;;;;;;;:72;;;;;;;;:21;;:72;;;;;;;;;;;;:::i;:::-;-1:-1:-1;498:72:2;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;498:72:2;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;498:72:2;;;;;;;;;;;;-1:-1:-1;;498:72:2;;;;;;;;;;-1:-1:-1;;;;366:210:2:o;27:668::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;27:668:2;;;-1:-1:-1;27:668:2;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "27:668:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;197:42;;8:9:-1;5:2;;;30:1;27;20:12;5:2;197:42:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;197:42:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;197:42:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;197:42:2;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;197:42:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;197:42:2;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;197:42:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;582:108;;8:9:-1;5:2;;;30:1;27;20:12;5:2;582:108:2;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;582:108:2;;;;;;;;;;;;;;21:11:-1;5:28;;2:2;;;46:1;43;36:12;2:2;582:108:2;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;582:108:2;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;582:108:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;582:108:2;;-1:-1:-1;582:108:2;;-1:-1:-1;;;;;582:108:2;;;47:23;;8:9:-1;5:2;;;30:1;27;20:12;5:2;47:23:2;;;;;;;;;;;;;;;;;;;;366:210;;8:9:-1;5:2;;;30:1;27;20:12;5:2;366:210:2;;;;;;13:3:-1;8;5:12;2:2;;;30:1;27;20:12;2:2;366:210:2;;;;;;;;21:11:-1;5:28;;2:2;;;46:1;43;36:12;2:2;366:210:2;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;366:210:2;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;366:210:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;366:210:2;;;;;;;;-1:-1:-1;366:210:2;;-1:-1:-1;;21:11;5:28;;2:2;;;46:1;43;36:12;2:2;366:210:2;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;366:210:2;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;366:210:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;366:210:2;;;;;;;;-1:-1:-1;366:210:2;;-1:-1:-1;;21:11;5:28;;2:2;;;46:1;43;36:12;2:2;366:210:2;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;366:210:2;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;366:210:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;366:210:2;;-1:-1:-1;;;;366:210:2;;;;-1:-1:-1;366:210:2;;197:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;197:42:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;197:42:2;;;;;;;;;;;-1:-1:-1;;197:42:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;197:42:2;;-1:-1:-1;197:42:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;197:42:2;;;;;;;;;;;;;;;;-1:-1:-1;;197:42:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;197:42:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;197:42:2;;;;;;;-1:-1:-1;;197:42:2;;;:::o;582:108::-;653:14;;;;:10;:14;;;;;;;;:31;;;;:20;;;;;:31;;;;;:::i;:::-;;582:108;;:::o;47:23::-;;;;:::o;366:210::-;480:9;:11;;;;;;;;;520:50;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;498:21;;;;;;;;;;:72;;;;;;;;:21;;:72;;;;;;;;;;;;:::i;:::-;-1:-1:-1;498:72:2;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;498:72:2;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;498:72:2;;;;;;;;;;;;-1:-1:-1;;498:72:2;;;;;;;;;;-1:-1:-1;;;;366:210:2:o;27:668::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;27:668:2;;;-1:-1:-1;27:668:2;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\r\n\r\ncontract VGData{\r\n  uint public dataCount=0;\r\n  struct Datablock{\r\n    uint id;\r\n    string email;\r\n    string gameid;\r\n    string key;\r\n    bool transferable;\r\n  }\r\n\r\n  mapping(uint=>Datablock) public datablocks;\r\n\r\n  constructor() public{\r\n    // createTask(\"Tasks\");\r\n    createLicence(\"a@abc.com\",\"GG1\",\"asdjdoajdhi\",false);\r\n  }\r\n\r\n  function createLicence(string memory email,string memory gameid,string memory key,bool transferable) public{\r\n    dataCount++;\r\n    datablocks[dataCount]=Datablock(dataCount,email,gameid,key,transferable);\r\n  }\r\n\r\n  function transferlicence(uint id, string memory newemail) public{\r\n    datablocks[id].email = newemail;\r\n  }\r\n\r\n}\r\n",
+  "sourcePath": "C:/Users/nihar/OneDrive/Documents/GitHub/VGBlock/contracts/VGData.sol",
+  "ast": {
+    "absolutePath": "/C/Users/nihar/OneDrive/Documents/GitHub/VGBlock/contracts/VGData.sol",
+    "exportedSymbols": {
+      "VGData": [
+        150
+      ]
+    },
+    "id": 151,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 78,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 150,
+        "linearizedBaseContracts": [
+          150
+        ],
+        "name": "VGData",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 81,
+            "name": "dataCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 150,
+            "src": "47:23:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 79,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "47:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 80,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "69:1:2",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "VGData.Datablock",
+            "id": 92,
+            "members": [
+              {
+                "constant": false,
+                "id": 83,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 92,
+                "src": "98:7:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 82,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "98:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 85,
+                "name": "email",
+                "nodeType": "VariableDeclaration",
+                "scope": 92,
+                "src": "112:12:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 84,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "112:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 87,
+                "name": "gameid",
+                "nodeType": "VariableDeclaration",
+                "scope": 92,
+                "src": "131:13:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 86,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "131:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 89,
+                "name": "key",
+                "nodeType": "VariableDeclaration",
+                "scope": 92,
+                "src": "151:10:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 88,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "151:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 91,
+                "name": "transferable",
+                "nodeType": "VariableDeclaration",
+                "scope": 92,
+                "src": "168:17:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 90,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "168:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Datablock",
+            "nodeType": "StructDefinition",
+            "scope": 150,
+            "src": "75:116:2",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 96,
+            "name": "datablocks",
+            "nodeType": "VariableDeclaration",
+            "scope": 150,
+            "src": "197:42:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Datablock_$92_storage_$",
+              "typeString": "mapping(uint256 => struct VGData.Datablock)"
+            },
+            "typeName": {
+              "id": 95,
+              "keyType": {
+                "id": 93,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "205:4:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "197:24:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Datablock_$92_storage_$",
+                "typeString": "mapping(uint256 => struct VGData.Datablock)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 94,
+                "name": "Datablock",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 92,
+                "src": "211:9:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Datablock_$92_storage_ptr",
+                  "typeString": "struct VGData.Datablock"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 106,
+              "nodeType": "Block",
+              "src": "266:94:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "61406162632e636f6d",
+                        "id": 100,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "316:11:2",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_02757855f13bff0d2ea136329d2a7caa3019f05b7ee60d83c7944df9e83b7bac",
+                          "typeString": "literal_string \"a@abc.com\""
+                        },
+                        "value": "a@abc.com"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "474731",
+                        "id": 101,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "328:5:2",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_04ee6a745f8172f4c500eb9d994113c2d4f8fa2992f21969a6f5f7a62582d1f2",
+                          "typeString": "literal_string \"GG1\""
+                        },
+                        "value": "GG1"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "6173646a646f616a646869",
+                        "id": 102,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "334:13:2",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_fa23021f4537e142858c2f9c0161682a58d7f572eae4dff09da2ef3fe723f102",
+                          "typeString": "literal_string \"asdjdoajdhi\""
+                        },
+                        "value": "asdjdoajdhi"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "66616c7365",
+                        "id": 103,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "bool",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "348:5:2",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        "value": "false"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_02757855f13bff0d2ea136329d2a7caa3019f05b7ee60d83c7944df9e83b7bac",
+                          "typeString": "literal_string \"a@abc.com\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_04ee6a745f8172f4c500eb9d994113c2d4f8fa2992f21969a6f5f7a62582d1f2",
+                          "typeString": "literal_string \"GG1\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_fa23021f4537e142858c2f9c0161682a58d7f572eae4dff09da2ef3fe723f102",
+                          "typeString": "literal_string \"asdjdoajdhi\""
+                        },
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 99,
+                      "name": "createLicence",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 134,
+                      "src": "302:13:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_bool_$returns$__$",
+                        "typeString": "function (string memory,string memory,string memory,bool)"
+                      }
+                    },
+                    "id": 104,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "302:52:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 105,
+                  "nodeType": "ExpressionStatement",
+                  "src": "302:52:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 107,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 97,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "257:2:2"
+            },
+            "returnParameters": {
+              "id": 98,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "266:0:2"
+            },
+            "scope": 150,
+            "src": "246:114:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 133,
+              "nodeType": "Block",
+              "src": "473:103:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 119,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "480:11:2",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 118,
+                      "name": "dataCount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 81,
+                      "src": "480:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 120,
+                  "nodeType": "ExpressionStatement",
+                  "src": "480:11:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 131,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 121,
+                        "name": "datablocks",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 96,
+                        "src": "498:10:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Datablock_$92_storage_$",
+                          "typeString": "mapping(uint256 => struct VGData.Datablock storage ref)"
+                        }
+                      },
+                      "id": 123,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 122,
+                        "name": "dataCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 81,
+                        "src": "509:9:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "498:21:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Datablock_$92_storage",
+                        "typeString": "struct VGData.Datablock storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 125,
+                          "name": "dataCount",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 81,
+                          "src": "530:9:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 126,
+                          "name": "email",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 109,
+                          "src": "540:5:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 127,
+                          "name": "gameid",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 111,
+                          "src": "546:6:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 128,
+                          "name": "key",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 113,
+                          "src": "553:3:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 129,
+                          "name": "transferable",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 115,
+                          "src": "557:12:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        ],
+                        "id": 124,
+                        "name": "Datablock",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 92,
+                        "src": "520:9:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Datablock_$92_storage_ptr_$",
+                          "typeString": "type(struct VGData.Datablock storage pointer)"
+                        }
+                      },
+                      "id": 130,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "520:50:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Datablock_$92_memory",
+                        "typeString": "struct VGData.Datablock memory"
+                      }
+                    },
+                    "src": "498:72:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Datablock_$92_storage",
+                      "typeString": "struct VGData.Datablock storage ref"
+                    }
+                  },
+                  "id": 132,
+                  "nodeType": "ExpressionStatement",
+                  "src": "498:72:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 134,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createLicence",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 116,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 109,
+                  "name": "email",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 134,
+                  "src": "389:19:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 108,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "389:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 111,
+                  "name": "gameid",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 134,
+                  "src": "409:20:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 110,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "409:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 113,
+                  "name": "key",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 134,
+                  "src": "430:17:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 112,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "430:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 115,
+                  "name": "transferable",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 134,
+                  "src": "448:17:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 114,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "448:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "388:78:2"
+            },
+            "returnParameters": {
+              "id": 117,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "473:0:2"
+            },
+            "scope": 150,
+            "src": "366:210:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 148,
+              "nodeType": "Block",
+              "src": "646:44:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 146,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 141,
+                          "name": "datablocks",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 96,
+                          "src": "653:10:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Datablock_$92_storage_$",
+                            "typeString": "mapping(uint256 => struct VGData.Datablock storage ref)"
+                          }
+                        },
+                        "id": 143,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 142,
+                          "name": "id",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 136,
+                          "src": "664:2:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "653:14:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Datablock_$92_storage",
+                          "typeString": "struct VGData.Datablock storage ref"
+                        }
+                      },
+                      "id": 144,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "email",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 85,
+                      "src": "653:20:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 145,
+                      "name": "newemail",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 138,
+                      "src": "676:8:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "653:31:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 147,
+                  "nodeType": "ExpressionStatement",
+                  "src": "653:31:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 149,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transferlicence",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 139,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 136,
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 149,
+                  "src": "607:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 135,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "607:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 138,
+                  "name": "newemail",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 149,
+                  "src": "616:22:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 137,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "616:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "606:33:2"
+            },
+            "returnParameters": {
+              "id": 140,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "646:0:2"
+            },
+            "scope": 150,
+            "src": "582:108:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 151,
+        "src": "27:668:2"
+      }
+    ],
+    "src": "0:697:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/nihar/OneDrive/Documents/GitHub/VGBlock/contracts/VGData.sol",
+    "exportedSymbols": {
+      "VGData": [
+        150
+      ]
+    },
+    "id": 151,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 78,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 150,
+        "linearizedBaseContracts": [
+          150
+        ],
+        "name": "VGData",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 81,
+            "name": "dataCount",
+            "nodeType": "VariableDeclaration",
+            "scope": 150,
+            "src": "47:23:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 79,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "47:4:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "30",
+              "id": 80,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "69:1:2",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_rational_0_by_1",
+                "typeString": "int_const 0"
+              },
+              "value": "0"
+            },
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "VGData.Datablock",
+            "id": 92,
+            "members": [
+              {
+                "constant": false,
+                "id": 83,
+                "name": "id",
+                "nodeType": "VariableDeclaration",
+                "scope": 92,
+                "src": "98:7:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 82,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "98:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 85,
+                "name": "email",
+                "nodeType": "VariableDeclaration",
+                "scope": 92,
+                "src": "112:12:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 84,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "112:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 87,
+                "name": "gameid",
+                "nodeType": "VariableDeclaration",
+                "scope": 92,
+                "src": "131:13:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 86,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "131:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 89,
+                "name": "key",
+                "nodeType": "VariableDeclaration",
+                "scope": 92,
+                "src": "151:10:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 88,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "151:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 91,
+                "name": "transferable",
+                "nodeType": "VariableDeclaration",
+                "scope": 92,
+                "src": "168:17:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 90,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "168:4:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Datablock",
+            "nodeType": "StructDefinition",
+            "scope": 150,
+            "src": "75:116:2",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 96,
+            "name": "datablocks",
+            "nodeType": "VariableDeclaration",
+            "scope": 150,
+            "src": "197:42:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Datablock_$92_storage_$",
+              "typeString": "mapping(uint256 => struct VGData.Datablock)"
+            },
+            "typeName": {
+              "id": 95,
+              "keyType": {
+                "id": 93,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "205:4:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "197:24:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Datablock_$92_storage_$",
+                "typeString": "mapping(uint256 => struct VGData.Datablock)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 94,
+                "name": "Datablock",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 92,
+                "src": "211:9:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Datablock_$92_storage_ptr",
+                  "typeString": "struct VGData.Datablock"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 106,
+              "nodeType": "Block",
+              "src": "266:94:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "61406162632e636f6d",
+                        "id": 100,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "316:11:2",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_02757855f13bff0d2ea136329d2a7caa3019f05b7ee60d83c7944df9e83b7bac",
+                          "typeString": "literal_string \"a@abc.com\""
+                        },
+                        "value": "a@abc.com"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "474731",
+                        "id": 101,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "328:5:2",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_04ee6a745f8172f4c500eb9d994113c2d4f8fa2992f21969a6f5f7a62582d1f2",
+                          "typeString": "literal_string \"GG1\""
+                        },
+                        "value": "GG1"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "6173646a646f616a646869",
+                        "id": 102,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "334:13:2",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_fa23021f4537e142858c2f9c0161682a58d7f572eae4dff09da2ef3fe723f102",
+                          "typeString": "literal_string \"asdjdoajdhi\""
+                        },
+                        "value": "asdjdoajdhi"
+                      },
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "66616c7365",
+                        "id": 103,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "bool",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "348:5:2",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        "value": "false"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_02757855f13bff0d2ea136329d2a7caa3019f05b7ee60d83c7944df9e83b7bac",
+                          "typeString": "literal_string \"a@abc.com\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_04ee6a745f8172f4c500eb9d994113c2d4f8fa2992f21969a6f5f7a62582d1f2",
+                          "typeString": "literal_string \"GG1\""
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_fa23021f4537e142858c2f9c0161682a58d7f572eae4dff09da2ef3fe723f102",
+                          "typeString": "literal_string \"asdjdoajdhi\""
+                        },
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 99,
+                      "name": "createLicence",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 134,
+                      "src": "302:13:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_string_memory_ptr_$_t_bool_$returns$__$",
+                        "typeString": "function (string memory,string memory,string memory,bool)"
+                      }
+                    },
+                    "id": 104,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "302:52:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 105,
+                  "nodeType": "ExpressionStatement",
+                  "src": "302:52:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 107,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 97,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "257:2:2"
+            },
+            "returnParameters": {
+              "id": 98,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "266:0:2"
+            },
+            "scope": 150,
+            "src": "246:114:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 133,
+              "nodeType": "Block",
+              "src": "473:103:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 119,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "480:11:2",
+                    "subExpression": {
+                      "argumentTypes": null,
+                      "id": 118,
+                      "name": "dataCount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 81,
+                      "src": "480:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 120,
+                  "nodeType": "ExpressionStatement",
+                  "src": "480:11:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 131,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 121,
+                        "name": "datablocks",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 96,
+                        "src": "498:10:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Datablock_$92_storage_$",
+                          "typeString": "mapping(uint256 => struct VGData.Datablock storage ref)"
+                        }
+                      },
+                      "id": 123,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 122,
+                        "name": "dataCount",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 81,
+                        "src": "509:9:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "498:21:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Datablock_$92_storage",
+                        "typeString": "struct VGData.Datablock storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "id": 125,
+                          "name": "dataCount",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 81,
+                          "src": "530:9:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 126,
+                          "name": "email",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 109,
+                          "src": "540:5:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 127,
+                          "name": "gameid",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 111,
+                          "src": "546:6:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 128,
+                          "name": "key",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 113,
+                          "src": "553:3:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 129,
+                          "name": "transferable",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 115,
+                          "src": "557:12:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          },
+                          {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        ],
+                        "id": 124,
+                        "name": "Datablock",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 92,
+                        "src": "520:9:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Datablock_$92_storage_ptr_$",
+                          "typeString": "type(struct VGData.Datablock storage pointer)"
+                        }
+                      },
+                      "id": 130,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "520:50:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Datablock_$92_memory",
+                        "typeString": "struct VGData.Datablock memory"
+                      }
+                    },
+                    "src": "498:72:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Datablock_$92_storage",
+                      "typeString": "struct VGData.Datablock storage ref"
+                    }
+                  },
+                  "id": 132,
+                  "nodeType": "ExpressionStatement",
+                  "src": "498:72:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 134,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "createLicence",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 116,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 109,
+                  "name": "email",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 134,
+                  "src": "389:19:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 108,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "389:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 111,
+                  "name": "gameid",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 134,
+                  "src": "409:20:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 110,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "409:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 113,
+                  "name": "key",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 134,
+                  "src": "430:17:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 112,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "430:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 115,
+                  "name": "transferable",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 134,
+                  "src": "448:17:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 114,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "448:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "388:78:2"
+            },
+            "returnParameters": {
+              "id": 117,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "473:0:2"
+            },
+            "scope": 150,
+            "src": "366:210:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 148,
+              "nodeType": "Block",
+              "src": "646:44:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 146,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 141,
+                          "name": "datablocks",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 96,
+                          "src": "653:10:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Datablock_$92_storage_$",
+                            "typeString": "mapping(uint256 => struct VGData.Datablock storage ref)"
+                          }
+                        },
+                        "id": 143,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 142,
+                          "name": "id",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 136,
+                          "src": "664:2:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "653:14:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Datablock_$92_storage",
+                          "typeString": "struct VGData.Datablock storage ref"
+                        }
+                      },
+                      "id": 144,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "email",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 85,
+                      "src": "653:20:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 145,
+                      "name": "newemail",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 138,
+                      "src": "676:8:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "653:31:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 147,
+                  "nodeType": "ExpressionStatement",
+                  "src": "653:31:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 149,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transferlicence",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 139,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 136,
+                  "name": "id",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 149,
+                  "src": "607:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 135,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "607:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 138,
+                  "name": "newemail",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 149,
+                  "src": "616:22:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 137,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "616:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "606:33:2"
+            },
+            "returnParameters": {
+              "id": 140,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "646:0:2"
+            },
+            "scope": 150,
+            "src": "582:108:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 151,
+        "src": "27:668:2"
+      }
+    ],
+    "src": "0:697:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x79fD045Eed08DC503D669f864561e500D64e1528",
+      "transactionHash": "0x03ffd56bff143256e3fbb5b7f7d2ab52b962076d79e2a10c06197683c63ffccf"
+    }
+  },
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2022-12-02T02:43:26.440Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
