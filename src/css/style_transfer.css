@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+body{
+    background: #1a0327;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../images/gaming.jpg");
+    background-repeat:no-repeat;
+    
+
+    /* height: 350vh; */
+    color: white
+}
+
+
+.logo-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+.logo-section .fas{
+    font-size: 6rem;
+    color: #FEC53A;
+}
+.logo-section h1{
+    width: 250px;
+    font-size: 3rem;
+    color: #FEC53A;
+    margin-left: 10px;
+}
+/* .table-section table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.table-section .heading{
+    width: 100%;
+    font-size: 1.5rem;
+    color: #FEC53A;
+    margin-left: 10px; 
+}
+.table-section .font{
+    width: 100%;
+    font-size: 1rem;
+    color: #FEC53A;
+    margin-left: 10px; 
+
+
+} */

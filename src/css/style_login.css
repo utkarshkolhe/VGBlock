@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/gaming.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.username, .password {
+    position: relative;
+    margin: 25px;
+}
+
+#username, #password {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.fa-envelope, .fa-lock-open {
+    position: absolute;
+    left: -30px;
+    top: 10px;
+    color: rgb(256,256,256);
+}
+
+.box input[type="text"], .box input[type="password"] {
+    font-size: 20px;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #0367fd;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: #fff;
+    border-radius: 24px;
+    transition: all .2s ease-in;
+    align-self: center;
+}
+
+.box input[type="text"]:focus,.box input[type="password"]:focus {
+    width: 250px;
+    border-color: #ffc400ec;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #ffc400ec;
+    padding: 14px 35px;
+    font-size: 30px;
+    color: white;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #ffc400ca;
+}
